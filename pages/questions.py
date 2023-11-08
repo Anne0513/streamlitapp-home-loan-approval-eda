@@ -73,7 +73,7 @@ def page_question2():
         max=df_select_new[select_line].max()
         st.header("The mean value of "+select_line+" is:"+str(mean))
         st.header("The minimum value of "+select_line+" is:"+str(min))
-        st.header("The minimum value of "+select_line+" is:"+str(max))
+        st.header("The maximum value of "+select_line+" is:"+str(max))
         data = {'mean': [mean],
         'min': [min],
         'max': [max]}
