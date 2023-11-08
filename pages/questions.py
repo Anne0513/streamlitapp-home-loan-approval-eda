@@ -77,6 +77,7 @@ def page_question2():
         data = {'mean': [mean],
         'min': [min],
         'max': [max]}
+        data=data.droupby[['mean'],['min'],['max']]
         df = pd.DataFrame(data)
         st.bar_chart(df)
 
